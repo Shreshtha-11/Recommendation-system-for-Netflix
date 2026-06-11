@@ -1,0 +1,182 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #121212;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+}
+
+#root {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Simple Clean Utilities */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .header {
+    border-bottom: 1px solid #333;
+  }
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  gap: 1rem;
+}
+
+.login-form input {
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+  text-align: center;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #e50914; /* Standard red accent */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #f40612;
+}
+
+.btn-small {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  background-color: #333;
+}
+
+.btn-small:hover {
+  background-color: #555;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.movie-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (prefers-color-scheme: dark) {
+  .movie-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+  }
+}
+
+.movie-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.movie-year {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.movie-score {
+  font-weight: bold;
+  color: #e50914;
+}
+
+.movie-explanation {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 1rem;
+  border-top: 1px solid #eee;
+  padding-top: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .movie-explanation {
+    color: #999;
+    border-top: 1px solid #333;
+  }
+}
+
+.rating-container {
+  display: flex;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.star-btn {
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.star-btn:hover, .star-btn.active {
+  color: #f5c518; /* IMDB Gold */
+}
+
+.section-title {
+  margin-bottom: 1rem;
+  border-left: 4px solid #e50914;
+  padding-left: 0.5rem;
+}
