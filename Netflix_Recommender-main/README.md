@@ -1,4 +1,4 @@
-# submitted by - yuvraj , 24124046
+# submitted by - yuvraj , 24124046 , shreshtha shrinivas 24124040
 
 
 Netflix Recommendation System
