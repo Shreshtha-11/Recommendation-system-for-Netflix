@@ -1,16 +1,18 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project template offers a lightweight setup for running React with Vite, featuring Hot Module Replacement (HMR) and a basic ESLint configuration.
 
-Currently, two official plugins are available:
+### Available Official Plugins
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Currently, you can choose from two official React plugins:
 
-## React Compiler
+- **@vitejs/plugin-react** — powered by Oxc
+- **@vitejs/plugin-react-swc** — powered by SWC
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### React Compiler
 
-## Expanding the ESLint configuration
+The React Compiler is not enabled by default in this template due to its impact on development and build performance. If you want to enable it, refer to the official React Compiler documentation.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Extending ESLint Configuration
+
+For production-grade applications, it is recommended to use TypeScript along with type-aware linting rules. You can refer to the TypeScript template for guidance on integrating TypeScript and `typescript-eslint` into your project.
