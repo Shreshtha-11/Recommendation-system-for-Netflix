@@ -1,14 +1,56 @@
-Cultural Council IITR Summer Open Project 2026
-AIML PS
-Netflix Movie Recommender System
+# submitted by - yuvraj , 24124046 , shreshtha shrinivas 24124040
 
-The system starts with precomputed recommendation data stored in the backend. The main model is an SVD-based collaborative filtering model. For each user and movie, it stores latent vectors and bias values, then predicts how much a user will like each movie.
 
-It also supports three recommendation modes:
+Netflix Recommendation System
+This project is a full-stack implementation of a movie recommendation engine, inspired by the classic Netflix Prize challenge. It uses machine learning to predict user movie preferences and provide personalized recommendations.
 
-Existing user in the SVD model
-The app uses the trained SVD factors to generate personalized recommendations.
-New user with some ratings
-The app uses item-based collaborative filtering from the movies the user recently rated in the SQLite database.
-Brand new user with no history
-The app falls back to popular movies using global movie bias scores.
+🚀 Project Overview
+This system processes movie rating data to suggest titles to users. It leverages [mention specific techniques, e.g., Collaborative Filtering/Matrix Factorization] to analyze user viewing patterns and predict ratings for unwatched content.
+
+🛠️ Tech Stack
+Frontend: React, Vite
+
+Backend: [e.g., Python, Flask/FastAPI]
+
+Machine Learning: Scikit-learn, Pandas, NumPy, Jupyter Notebooks
+
+Dataset: Netflix Prize Dataset (Movie Ratings)
+
+📁 Repository Structure
+/backend: API and logic for serving recommendations.
+
+/frontend: The user interface for interacting with the recommender.
+
+/Netflix_Recommender.ipynb: The primary notebook where data analysis and model training occurred.
+
+movie_titles.csv: Mapping of movie IDs to their respective titles.
+
+⚙️ Installation & Setup
+Prerequisites
+Node.js (for the frontend)
+
+Python 3.x (for the backend/model)
+
+Steps
+Clone the repository:
+
+Bash
+git clone https://github.com/Conqueror63/Recommendation-system-for-Netflix.git
+cd Recommendation-system-for-Netflix
+Run the Backend:
+
+Bash
+cd backend
+# Install dependencies and start your server here
+Run the Frontend:
+
+Bash
+cd ../frontend
+npm install
+npm run dev
+📊 How It Works
+Data Preprocessing: Cleaned the raw Netflix rating data and handled movie title mappings.
+
+Model Training: Used [mention your model, e.g., SVD or KNN] to identify patterns in user ratings.
+
+Prediction: The system calculates the similarity between users/items and generates top-N recommendations.

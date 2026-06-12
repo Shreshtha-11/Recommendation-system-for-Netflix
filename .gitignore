@@ -1,0 +1,28 @@
+# Python virtual environment
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+.vscode/
+
+# Netflix large data files
+data/combined_data_1.txt
+data/combined_data_2.txt
+data/combined_data_3.txt
+data/combined_data_4.txt
+
+# Node / Frontend
+node_modules/
+dist/
+frontend/node_modules/
+frontend/dist/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.*
+*.local
