@@ -9,7 +9,15 @@ from typing import List, Dict, Any
 from src.data_utils import load_movie_titles, get_user_interactions
 from src.models.collaborative_filtering import ItemCollaborativeFiltering
 from src.models.matrix_factorization import FunkSVD
+from fastapi.middleware.cors import CORSMiddleware
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # later replace with Netlify URL
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 app = FastAPI(
     title="Cinemix Recommendation API",
     description="Backend API powering the Netflix Recommendation System dashboard",
